@@ -12,6 +12,7 @@ footer
       img 
         width: 350px
         height: 108px
+        max-width: 100%
         transition: opacity ease .7s
         will-change: opacity
       &:hover
@@ -20,10 +21,16 @@ footer
 
     ul.follow
       display: flex
-      width: 25vw
+      //width: 25vw
+      max-width: 100%
       margin: 0 auto
       justify-content: center
       @include pt-6
+    @include s
+      ul.follow
+        flex-wrap: wrap
+        li 
+          margin: 25px 15px
 
   .footer_bar
     background: $white

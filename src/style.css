@@ -1660,6 +1660,7 @@ picture img {
      object-fit: cover;
   height: 100%;
   width: 100%;
+  max-width: 100%;
 }
 
 /*** Icons */
@@ -1731,6 +1732,12 @@ footer svg.instagram__icon, footer svg.x__icon, footer svg.facebook__icon, foote
 }
 footer svg.instagram__icon:hover, footer svg.x__icon:hover, footer svg.facebook__icon:hover, footer svg.youtube__icon:hover {
   fill: #94762a;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  footer svg.instagram__icon, footer svg.x__icon, footer svg.facebook__icon, footer svg.youtube__icon {
+    width: 70px;
+    height: 50px;
+  }
 }
 
 svg.next_btn {
@@ -2093,6 +2100,7 @@ footer .item_1 {
 footer .item_1 a#logo_footer img {
   width: 350px;
   height: 108px;
+  max-width: 100%;
   transition: opacity ease 0.7s;
   will-change: opacity;
 }
@@ -2101,7 +2109,7 @@ footer .item_1 a#logo_footer:hover {
 }
 footer .item_1 ul.follow {
   display: flex;
-  width: 25vw;
+  max-width: 100%;
   margin: 0 auto;
   justify-content: center;
   padding-top: 24px;
@@ -2114,6 +2122,14 @@ footer .item_1 ul.follow {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   footer .item_1 ul.follow {
     padding-top: 16px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  footer .item_1 ul.follow {
+    flex-wrap: wrap;
+  }
+  footer .item_1 ul.follow li {
+    margin: 25px 15px;
   }
 }
 footer .footer_bar {
