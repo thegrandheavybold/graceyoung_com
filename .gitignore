@@ -5,4 +5,4 @@ dist
 .BridgeSort
 # Local Netlify folder
 .netlify
-src/assets
+.vscode
