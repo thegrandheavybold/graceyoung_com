@@ -1,0 +1,34 @@
+section.about 
+  @include pt-16
+  @include pb-30
+
+  &::after
+    content: ""
+    display: block
+    position: absolute
+    z-index: -1
+    top: 0
+    left: 0
+    background-image: url(./assets/img/gy-bg_pattern_07.svg)
+    background-repeat: repeat
+    background-position: center center
+    background-size: 6rem
+    width: 100%
+    height: 100%
+    opacity: .08
+
+  .item_1
+    width: 100%
+  .item_2
+    .wrapping_img
+      float: left
+      width: 45vw
+      margin: 0 5vw 2vw 0
+      &::after
+        clear: both
+
+    @include s
+      .wrapping_img
+        float: none
+        width: 100%
+        margin: 0 0vw 2vw 0

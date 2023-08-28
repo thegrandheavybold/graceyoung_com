@@ -1,0 +1,44 @@
+header
+  margin: 0
+  padding: 24px 0 24px 0
+  position: fixed
+  top: 0
+  width: 100vw
+  background: $white
+  color: $red
+  z-index: 100
+  transition: padding ease 1.4s
+  will-change: padding
+  border-bottom: solid 2px rgba($gray, 0.1)
+
+  &.sticky
+    padding: 16px 0 16px 0
+
+  .wrapper
+    align-items: center
+
+  .header_bar
+    //width: 100%
+    display: flex
+    position: relative
+    align-items: self-start
+    justify-content: space-between
+    flex-direction: column
+    align-items: center
+    grid-column: 3/11
+
+
+
+
+
+@include s
+  header
+    .grd
+      display: flex
+    .header_bar
+      position: absolute
+      width: 100vw
+      left: 0
+      display: block
+
+

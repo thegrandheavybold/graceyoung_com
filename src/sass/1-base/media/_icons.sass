@@ -1,0 +1,71 @@
+svg.nxt_lvl__arrow
+  width: 16px
+  height: 16px
+  stroke: $red
+  stroke-width: 2
+
+a.scroll_down
+  position: absolute
+  bottom: 40px
+  @include s
+    display: none
+
+svg.scroll__arrow
+  width: 25px
+  height: 26px
+  stroke: $white
+  stroke-width: 2
+
+.scrollUp
+  height: 64px
+  width: 64px
+  display: block
+  border-radius: 50%
+  border: solid 2px
+  border-color: $red
+  display: flex
+  align-items: center
+  transition: border-color ease .7s
+  will-change: border-color
+  &:hover
+    border-color: $red
+
+svg.scrollUp__icon
+  width: 64px
+  height: 64px
+  stroke-width: 2
+  transition: stroke ease .7s
+  will-change: stroke
+  &:hover
+    stroke: $red
+
+svg.instagram__icon, svg.x__icon, svg.facebook__icon, svg.youtube__icon
+  width: 32px
+  height: 32px
+  display: block
+  fill: $red
+footer 
+  svg.instagram__icon, svg.x__icon, svg.facebook__icon, svg.youtube__icon
+    width: 120px
+    height: 60px
+    display: block
+    fill: $gray10
+    transition: fill ease .7s
+    will-change: fill
+    &:hover
+      fill: $gold
+
+svg.next_btn
+  stroke: $red
+  stroke-width: 2
+  width: 24px
+  height: 24px
+  transition: stroke ease .7s
+  will-change: stroke
+
+svg.about_icon
+  display: block
+  width: 64px
+  height: 64px
+  margin: 2rem auto 0 auto
+  fill: $gold

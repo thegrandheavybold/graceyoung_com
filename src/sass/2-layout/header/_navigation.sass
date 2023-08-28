@@ -1,0 +1,40 @@
+.menu-button-links
+	margin: 0
+	//width: 100vw
+	cursor: pointer
+	position: relative
+
+//******* Desktop Menu *******//
+@media only screen and (min-width: 1024px)
+	.menu-button-links [role="menu"]
+		//margin: 1rem auto 0
+		display: flex
+		//justify-content: center
+
+	.menu-button-links [role="menuitem"],
+	.menu-button-links [role="separator"]
+		margin: 0
+		padding: 0
+		font-size: 20px
+		@include font_heavy
+		color: $red
+		&:hover
+			color: $red
+
+	
+
+		[role="menuitem"],
+		[role="separator"]
+			margin: 0
+			padding: 0
+			display: block
+			color: $red
+			font-size: 32px
+
+
+
+
+	[role="menuitem"][aria-current="currentpage"], [role="menuitem"][aria-current="active"]
+		color: $red !important
+		h6
+			color: $red !important

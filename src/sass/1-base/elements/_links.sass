@@ -1,0 +1,50 @@
+a
+	color: $red
+	//text-decoration: none
+	@include font_heavy
+	transition: all ease .7s
+	text-decoration: none
+	cursor: pointer
+	position: relative
+	z-index: 90
+
+	&:visited
+		//color: $red
+
+
+	&:hover,
+	&:focus,
+	&:active
+		color: $red
+		border: none
+		outline: 0
+
+	&:hover,
+	&:active
+		outline: 0
+
+a.link
+	position: relative
+	background: linear-gradient($red, $red) right bottom no-repeat
+	background-size: 100% 2px
+	transition: all .7s
+	//&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 2px
+		bottom: 0
+		left: 0
+		background-color: $red
+		visibility: visible
+		transform-origin: right
+		transform: scaleX(1)
+		transition: all ease .7s
+
+a.link:hover, a.link.wht:hover
+	background-size: 0% 2px
+
+a.link.wht
+	background: linear-gradient($white, $white) right bottom no-repeat
+	background-size: 100% 2px
+	transition: all .7s

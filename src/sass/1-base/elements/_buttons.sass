@@ -1,0 +1,68 @@
+button
+  cursor: pointer
+  @include paragraph_regular
+  box-sizing: border-box
+  appearance: none !important
+  border: solid 2px
+  background: transparent
+  transition: border-color ease .7s
+  will-change: border-color
+  position: relative
+  z-index: 90
+
+  &:hover
+    border-color: $red
+
+  &:active
+    border-color: $red
+
+.btn
+  padding: 17px 24px 17px 24px
+
+
+.btn_ql
+  border-color: $red
+  padding: 9px 16px
+  color: $red
+  border-radius: 25px
+  @include small_regular
+
+.btn_red
+  border-color: $red
+  color: $red
+
+
+
+.btn_wht
+  border-color: $white
+  background: transparent
+  color: $white
+
+.ww_top
+  width: 64px
+  height: 64px
+  display: block
+
+.ww_phone, .sticky_btn
+  color: $red
+  background: $white
+  &:hover
+    border-color: $red
+  &:active
+    border-color: $red
+    color: $red
+
+
+.ww_message
+  border: 3px solid $red
+  background-color: $white
+  color: $red
+  transition: background-color ease 1s
+  &:hover
+    border: 3px solid transparent
+    background: $red border-box
+    color: $white
+  &:active
+    border: 3px solid transparent
+    background: $red
+    color: $white
